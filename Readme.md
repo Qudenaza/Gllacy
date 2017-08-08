@@ -1,7 +1,7 @@
 ﻿# Личный проект «Глейси»
 
 * Студент: [Дмитрий  Никифоров](https://up.htmlacademy.ru/htmlcss/18/user/278195).
-* Наставник:  [Александр Калинин](https://up.htmlacademy.ru/htmlcss/18/user/311377).
+* Наставник: [Александр Калинин](https://up.htmlacademy.ru/htmlcss/18/user/311377).
 
 ---
 
