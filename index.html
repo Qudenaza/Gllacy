@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-nav">
+    <header class="main-header wrapper">
+      <nav class="main-navigation">
         <a href="#" class="main-logo">
           <img src="img/logo.svg" alt="Логотип «Глэйси»" width="154" height="64">
         </a>
-        <ul class="site-nav">
+        <ul class="site-navigation">
           <li>
             <a href="content.html">Каталог</a>
             <ul class="under-menu">
@@ -46,7 +48,8 @@
         <a href="#" class="button">Давайте оба!</a>
       </section>
     </header>
-    <main class="container">
+    <main class="wrapper">
+     <div class="promo-columns">
       <section class="promo-card">
         <h2 class="promo-title">Малинка даром!</h2>
         <p>
@@ -61,10 +64,12 @@
         </p>
         <a href="#" class="button">Хочу шоколадки!</a>
       </section>
+      </div>
+      <div class="product-columns">
       <section class="product-card">
         <h2 class="visually-hidden">Сливочное мороженное</h2>
         <img src="img/310.png" alt="Сливочное мороженное" width="200" height="200">
-        <span class="product-price">310 Р / кг</span>
+        <p class="product-price">310 Р <span>/кг</span></p>
         <p class="product-info">
           <a href="#"> Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </p>
@@ -72,7 +77,7 @@
       <section class="product-card">
         <h2 class="visually-hidden">Сливочно-кофейное</h2>
         <img src="img/380.png" alt="Сливочное кофейное" width="200" height="200">
-        <span class="product-price">380 Р / кг</span>
+        <p class="product-price">380 Р <span>/кг</span></p>
         <p class="product-info">
           <a href="#"> Сливочно-кофейное с кусочками шоколада</a>
         </p>
@@ -80,7 +85,7 @@
       <section class="product-card">
         <h2 class="visually-hidden">Сливочно-клубничное</h2>
         <img src="img/355.png" alt="Сливочно-клубничное" width="200" height="200">
-        <span class="product-price">355 Р / кг</span>
+        <p class="product-price">355 Р <span>/кг</span></p>
         <p class="product-info">
           <a href="#"> Сливочно-клубничное с присыпкой из белого шоколада</a>
         </p>
@@ -88,11 +93,12 @@
       <section class="product-card">
         <h2 class="visually-hidden">Сливочное крем-брюле</h2>
         <img src="img/415.png" alt="Сливочное крем-брюле" width="200" height="200">
-        <span class="product-price">415 Р / кг</span>
+        <p class="product-price">415 Р <span>/кг</span></p>
         <p class="product-info">
           <a href="#"> Сливочное крем-брюле с карамельной подливкой</a>
         </p>
       </section>
+      </div>
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <b class="features-title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</b>
@@ -109,12 +115,13 @@
           Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
         </p>
       </section>
-      <article class="promo-card">
+      <div class="promo-columns">
+      <article class="promo-card sherbet-card">
         <h2 class="visually-hidden">Новое в блоге</h2>
         <b>Новое в нашем блоге</b>
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
-      <section class="promo-card subscribe">
+      <section class="promo-card subscribe-card">
         <h2 class="visually-hidden">Подпишись</h2>
         <p>Подпишитесь на нашу сладкую рассылку
           и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
@@ -125,8 +132,9 @@
           <button type="submit" class="button">Отправить</button>
         </form>
       </section>
+      </div>
       <div class="site-map">
-        <section class="adres">
+        <section class="adress">
           <h3 class="visually-hidden">Адрес</h3>
           <img src="img/map.jpg" alt="Наш адрес: Ул.Большая конюшенная 19/8" width="1200" height="430">
           <p>
@@ -142,7 +150,7 @@
         </section>
       </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer wrapper">
       <div class="footer-social">
         <ul>
           <li><a class="social-btn social-btn-tw" href="#">Твиттер</a></li>
@@ -165,7 +173,7 @@
         <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
       </div>
     </footer>
-    <section class="modal-login">
+    <!-- <section class="modal-login">
       <h2 class="visually-hidden">Форма входа</h2>
       <form action="#" method="post" class="login-form">
         <label for="pochta" class="visually-hidden">Электронная почта</label>
@@ -197,6 +205,6 @@
         <button type="submit" class="button">Отправить</button>
       </form>
       <button class="visually-hidden">Закрыть</button>
-    </section>
+    </section>-->
   </body>
 </html>

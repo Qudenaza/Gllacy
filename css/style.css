@@ -1,26 +1,228 @@
-body {
-  font-size: 16px;
+html, body {
+  margin: 0;
+  padding: 0;
+
   font-family: "Roboto", "Tahoma", serif;
+  font-size: 16px;
   font-weight: bold;
   line-height: 18px;
   color: #ffffff;
   background-color: #849d8f;
 }
 
-.page-title {
-  font-size: 60px;
-  font-family: "Roboto", "Tahoma", serif;
-  font-weight: bold;
-  line-height: 60px;
+a {
+  text-decoration: none;
+}
+
+.button {
   color: #ffffff;
+  border-radius: 25px;
+  background-image: -moz-linear-gradient( 90deg, #e74a35 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  opacity: 0.988;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.button:hover {
+  background: #f38367;
+  box-shadow: 0px 2px 2px 0px #ac1000;
+}
+
+.button:focus {
+  background: #d94a34;
+  box-shadow: inset 0px 2px 2px 0px #ac1000;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.site-navigation,
+.under-menu  {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-block a {
+  color: inherit;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-block a:hover,
+.user-block a:focus {
+  color: #333333;
+  background: #f7f6f3;
+}
+
+.promo-card p {
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .promo-title {
-  font-family: "Roboto", "Tahoma", serif;
   font-size: 35px;
-  font-weight: bold;
   line-height: 41px;
-  color: #ffffff;
+}
+
+.product-info a {
+  font-weight: 500;
+  line-height: 22px;
+  color: inherit;
+}
+
+.product-info a:hover,
+.product-info a:focus {
+  color: #ffbc9e;
 }
 
 
+.product-price {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.product-price span {
+  font-size: 30px;
+}
+
+.features {
+  color: #323232;
+  background-color: #eccb9a;
+}
+
+.features-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.features-item {
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.sherbet-card {
+  color: #323232;
+}
+
+.sherbet-card b {
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.sherbet-card a {
+  font-size: 24px;
+  line-height: 30px;
+  color: inherit;
+  text-decoration: underline;
+}
+
+.sherbet-card a:hover,
+.sherbet-card a:focus {
+  color: #e84d37;
+}
+
+.subscribe-card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5a5a5a;
+}
+
+.site-map {
+  color: #323232;
+}
+
+.site-map p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400px;
+}
+
+.site-map b {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav a {
+  font-size: 13px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+  color: #ffbc9e;
+}
+
+.footer-authors p {
+  font-size: 12px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.footer-authors a {
+  color: inherit;
+}
+
+.footer-authors a:hover,
+.footer-authors a:focus {
+  color: #ffbc9e;
+}
+
+
+/*  Каталог  */
+
+.breadcrumbs {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.breadcrumbs a {
+  color: #ffffff;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: #ffbc9e;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list a {
+  font-weight: 500;
+  color: inherit;
+}
+
+.pagination-list a:hover,
+.pagination-list a:active {
+  color: #323232;
+  background: #ffffff;
+}
