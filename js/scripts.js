@@ -16,6 +16,15 @@ close.addEventListener("click", function (event) {
 	shadow.classList.remove("modal-overlay-show");
 });
 
+window.addEventListener("keydown", function(event){
+	if (event.keyCode === 27) {
+		if (popup.classList.contains("modal-content-show")) {
+		 popup.classList.remove("modal-content-show");
+		 shadow.classList.remove("modal-overlay-show");
+			}
+		}
+});
+
 function loadPage() {
 	document.body.style.background = "url('img/slider-image-1.png') no-repeat top center";
 }
