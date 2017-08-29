@@ -25,21 +25,6 @@ window.addEventListener("keydown", function(event){
 		}
 });
 
-function loadPage() {
-	document.body.style.background = "url('img/slider-image-1.png') no-repeat top center";
-}
-
-function slide1() {
-	document.body.style.background = "url('img/slider-image-1.png') no-repeat top center";
-}
-
-function slide2() {
-	document.body.style.background = "#8996a6 url('img/slider-image-2.png') no-repeat top center";
-}
-
-function slide3() {
-	document.body.style.background = "#9d8b84 url('img/slider-image-3.png') no-repeat top center";
-}
 
 var map;
 
