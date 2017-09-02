@@ -1124,6 +1124,11 @@ body > input[type="radio"] {
   animation: bounce 0.6s;
 }
 
+.modal-error {
+  animation: shake 0.5s;
+}
+
+
 
 /* Анимация */
 
@@ -1482,7 +1487,6 @@ _:-ms-fullscreen, :root .sorting-select select {
 
 .sorting-select select:focus {
   outline: none;
-  border: 1px solid #8fbdec;
   border-radius: 25px;
 }
 
