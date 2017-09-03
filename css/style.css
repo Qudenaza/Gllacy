@@ -61,10 +61,10 @@ html, body {
 :focus:-moz-placeholder           {color: transparent}
 :focus:-ms-input-placeholder      {color: transparent}
 
-input::-webkit-input-placeholder { color: #999999; font-size: 16px;}
-textarea::-webkit-input-placeholder { color: #999999; font-size: 16px;}
-input::-moz-placeholder { color: #999999; font-size: 16px;}
-textarea::-moz-placeholder { color: #999999; font-size: 16px;}
+input::-webkit-input-placeholder { color: #999999; font-size: 14px;}
+textarea::-webkit-input-placeholder { color: #999999; font-size: 14px;}
+input::-moz-placeholder { color: #999999; font-size: 14px;}
+textarea::-moz-placeholder { color: #999999; font-size: 14px;}
 
 
 /* Базовые стили для всех кнопок */
@@ -116,7 +116,7 @@ textarea::-moz-placeholder { color: #999999; font-size: 16px;}
   white-space: nowrap;
 }
 
-.site-menu li {
+.site-menu > li {
   position: relative;
   display: inline-block;
   padding-bottom: 4px;
@@ -178,8 +178,13 @@ textarea::-moz-placeholder { color: #999999; font-size: 16px;}
   display: block;
 }
 
+.sub-menu li:last-child {
+  margin-bottom: 4px;
+}
+
 .sub-menu a {
   margin: 0;
+  padding-left: 19px;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -314,8 +319,8 @@ textarea::-moz-placeholder { color: #999999; font-size: 16px;}
 
 .search-form {
   position: absolute;
-  top: 39px;
-  left: -308px;
+  top: 36px;
+  right: 10px;
   z-index: 501;
   display: none;
   background-color: #f8f7f4;
@@ -324,20 +329,20 @@ textarea::-moz-placeholder { color: #999999; font-size: 16px;}
 }
 
 .search-form input {
-  width: 310px;
-  margin: 20px 15px 20px 15px;
-  padding: 11px;
+  width: 311px;
+  margin: 20px 14px 20px 16px;
+  padding: 12px;
   border-radius: 5px;
   border: 1px solid #e5e5e3;
 }
 
 .search-form input:hover {
-  padding: 10px;
+  padding: 11px;
   border: 2px solid #c7c6c5;
 }
 
 .search-form input:focus {
-  padding: 10px;
+  padding: 11px;
   border: 2px solid #5b9ddf;
   outline: none;
 }
@@ -363,8 +368,8 @@ textarea::-moz-placeholder { color: #999999; font-size: 16px;}
 
 .login-form {
   position: absolute;
-  top: 39px;
-  left: -188px;
+  top: 36px;
+  right: 2px;
   z-index: 555;
   display: none;
   background: #f8f7f4;
@@ -373,7 +378,7 @@ textarea::-moz-placeholder { color: #999999; font-size: 16px;}
 }
 
 .login-form input {
-  margin: 20px 17px 0 19px;
+  margin: 20px 16px 2px 16px;
   padding: 11px;
   width: 220px;
   border-radius: 5px;
@@ -414,11 +419,11 @@ textarea::-moz-placeholder { color: #999999; font-size: 16px;}
 }
 
 .login-btn {
-  margin: 21px 0 21px 19px;
+  margin: 21px 0 21px 20px;
   padding: 10px 24px 10px 24px;
   font-size: 18px;
   line-height: 24px;
-  border-radius: 25px;
+  border-radius: 19px;
   outline: none;
   cursor: pointer;
 }
@@ -426,11 +431,11 @@ textarea::-moz-placeholder { color: #999999; font-size: 16px;}
 .login-password-info {
   display: block;
   float: right;
-  margin: 23px 21px 0 0;
+  margin: 19px 19px 0 0;
 }
 
 .login-password-info a:hover {
-    color: #e84d37;
+  color: #e84d37;
 }
 
 .login-password-info a {
@@ -448,7 +453,7 @@ textarea::-moz-placeholder { color: #999999; font-size: 16px;}
 .modal-basket {
   position: absolute;
   right: 0;
-  top: 39px;
+  top: 36px;
   z-index: 555;
   display: none;
   width: 540px;
@@ -682,7 +687,7 @@ body > input[type="radio"] {
 }
 
 .slider-button {
-  margin: 32px 0px 0px 460px;;
+  margin: 28px 0px 0px 460px;;
   padding: 11px 40px 10px 42px;
   font-size: 32px;
   line-height: 44px;
@@ -721,14 +726,14 @@ body > input[type="radio"] {
 
 .product-price {
   position: absolute;
-  bottom: 103px;
+  bottom: 100px;
   font-size: 45px;
   line-height: 45px;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .product-weight {
-  margin-left: 38px;
+  margin-left: 36px;
   font-size: 30px;
   line-height: 45px;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
@@ -736,7 +741,7 @@ body > input[type="radio"] {
 
 .product-info {
   display: inline-block;
-  margin-top: 11px;
+  margin-top: 10px;
   vertical-align: top;
   text-align: center;
 }
@@ -750,7 +755,7 @@ body > input[type="radio"] {
   border-bottom: 1px solid rgba(157, 177, 165, 0.8);
 }
 
-.product-card::after {
+.product-wrapper .product-card::after {
   position: absolute;
   bottom: 155px;
   left: 95px;
@@ -761,8 +766,11 @@ body > input[type="radio"] {
   background: url("../img/ruble.svg") no-repeat;
 }
 
+
+
 .btn-hover {
   position: absolute;
+  z-index: 268;
   display: none;
   margin-left: 35px;
   padding: 10px 15px 10px 15px;
@@ -772,6 +780,10 @@ body > input[type="radio"] {
   text-align: center;
 }
 
+
+.catalog-item .btn-hover {
+  bottom: -36px;
+}
 .product-card:hover .btn-hover {
   display: block;
 }
@@ -920,7 +932,7 @@ body > input[type="radio"] {
 }
 
 .promo-subscribe p {
-  margin: 29px 0 0 20px;
+  margin: 29px 10px 0 20px;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -981,15 +993,15 @@ body > input[type="radio"] {
 
 .modal-feedback {
   position: fixed;
-  top: 0;
+  top: 7px;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
   z-index: 557;
   display: none;
-  width: 480px;
-  height: 415px;
+  width: 477px;
+  height: 418px;
   padding-top: 20px;
   background: #f8f7f4;
   border-radius: 10px;
@@ -997,7 +1009,8 @@ body > input[type="radio"] {
 }
 
 .modal-feedback b {
-  margin-left: 26px;
+  display: block;
+  margin: -3px 0 18px 24px;
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
@@ -1009,22 +1022,38 @@ body > input[type="radio"] {
 }
 
 .modal-feedback input {
-  width: 200px;
-  margin: 20px 60px 0 24px;
-  padding: 10px;
+  width: 251px;
+  margin: 0 0 18px 24px;
+  padding: 14px 0 11px 14px;
   border-radius: 5px;
   border: 1px solid #e5e5e3;
 }
 
+.modal-feedback input::-webkit-input-placeholder { color: #999999; font-size: 16px;}
+.modal-feedback textarea::-webkit-input-placeholder { color: #999999; font-size: 16px;}
+.modal-feedback input::-moz-placeholder { color: #999999; font-size: 16px;}
+.modal-feedback textarea::-moz-placeholder { color: #999999; font-size: 16px;}
+
+.modal-feedback :focus::-webkit-input-placeholder {color: transparent}   /*Скрываем плэйсхолдер в фокусе */
+.modal-feedback :focus::-moz-placeholder          {color: transparent}
+.modal-feedback :focus:-moz-placeholder           {color: transparent}
+.modal-feedback :focus:-ms-input-placeholder      {color: transparent}
+
 .modal-feedback input:hover {
-  padding: 9px;
-  border: 2px solid #c7c6c5;
+  box-shadow: 0 0 0 2px #c7c6c5;
 }
 
 .modal-feedback input:focus {
-  padding: 9px;
-  border: 2px solid #5b9ddf;
+  box-shadow: 0 0 0 2px #5b9ddf;
   outline: none;
+}
+
+.modal-feedback label {
+  position: absolute;
+  display: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 .modal-feedback input:focus + label {
@@ -1035,23 +1064,23 @@ body > input[type="radio"] {
   color: #5b9ddf;
 }
 
-.modal-mail  {
+.modal-mail {
   position: absolute;
-  top: 123px;
+  top: 110px;
   left: 36px;
   display: none;
 }
 
 .user-name {
   position: absolute;
-  top: 63px;
+  top: 47px;
   left: 36px;
   display: none;
 }
 
 .modal-feedback textarea {
-  margin: 20px 0 20px 24px;
-  padding: 10px;
+  margin: 0 0 20px 24px;
+  padding: 10px 4px 0 13px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1061,17 +1090,16 @@ body > input[type="radio"] {
 }
 
 .modal-feedback textarea:hover {
-  border: 2px solid #c7c6c5;
-  padding: 9px;
+  box-shadow: 0 0 0 2px #c7c6c5;
 }
 
 .modal-feedback textarea:focus {
-  padding: 9px;
-  border: 2px solid #5b9ddf;
+  box-shadow: 0 0 0 2px #5b9ddf;
   outline: none;
 }
 
 .modal-feedback textarea:focus + label {
+  top: 173px;
   display: block;
   font-size: 11px;
   font-weight: 400;
@@ -1087,8 +1115,9 @@ body > input[type="radio"] {
 }
 
 .modal-feedback-btn {
-  margin-left: 23px;
-  padding: 10px 18px 10px 18px;
+  margin: 1px 27px 0 0;
+  padding: 10px 24px 10px 24px;
+  float: right;
   font-size: 18px;
   line-height: 24px;
   border-radius: 25px;
@@ -1111,8 +1140,8 @@ body > input[type="radio"] {
 
 .modal-close::before {
   position: absolute;
-  top: -1px;
-  right: 2px;
+  top: -4px;
+  right: 0;
   width: 18px;
   height: 17px;
   content: "";
@@ -1197,7 +1226,7 @@ body > input[type="radio"] {
 }
 
 .adress p {
-  margin-top: 27px;
+  margin-top: 31px;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -1361,6 +1390,14 @@ body > input[type="radio"] {
   line-height: 18px;
 }
 
+.footer-authors .logo-link {
+  border: none;
+}
+
+.footer-authors .logo-link:hover {
+  border: none;
+}
+
 .footer-authors a {
   color: #ffffff;
   border-bottom: 1px solid rgba(254, 254, 254, 0.2);
@@ -1412,6 +1449,9 @@ body > input[type="radio"] {
   line-height: 41px;
 }
 
+.sorting {
+  margin-bottom: 32px;
+}
 
 
 .sorting-form {
@@ -1701,22 +1741,34 @@ _:-ms-fullscreen, :root .sorting-select select {
 .filters {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 30px;
-  padding-left: 2px;
 }
+
 
 .catalog-item {
   position: relative;
   width: 267px;
-  margin: 0 0 -42px 4px;
-  padding: 6px 13px 56px 13px;
+  margin: 0 0 22px 26px;
   text-align: center;
+}
+
+
+.catalog-item:hover::before{
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -13px;
+  width: 292px;
+  min-height: 407px;
+  z-index: 256;
+  border-radius: 5px;
+  background-color: rgba(248, 247, 244, 0.2);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .catalog-item::after {
   position: absolute;
-  bottom: 150px;
-  left: 95px;
+  bottom: 92px;
+  left: 79px;
   display: block;
   width: 30px;
   height: 35px;
@@ -1725,26 +1777,16 @@ _:-ms-fullscreen, :root .sorting-select select {
 }
 
 .catalog-item .product-price {
-  bottom: 95px;
+  bottom: 37px;
+  left: -2px;
 }
 
 .catalog-item:hover .btn-hover {
   display: block;
 }
 
-.catalog-item:hover {
-  position: relative;
-  z-index: 250;
-  width: 267px;
-  border-radius: 5px;
-  background-color: rgba(248, 247, 244, 0.2);
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-}
-
-
-
 .pagination-list {
-  margin: 47px 25px 28px 0;
+  margin: 40px 22px 28px 0;
   list-style: none;
   text-align: right;
 }
