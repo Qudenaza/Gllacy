@@ -30,6 +30,8 @@ close.addEventListener("click", function (event) {
 form.addEventListener("submit", function(event) {
 	if (!userName.value || !mail.value) {
 		event.preventDefault();
+		popup.classList.remove("modal-error");
+		popup.offsetWidth = popup.offsetWidth;
 		popup.classList.add("modal-error");
 	} else {
 		localStorage.setItem("userName", userName.value);
@@ -51,7 +53,7 @@ window.addEventListener("keydown", function(event){
 var map;
 
 function initMap() {
-	map = new google.maps.Map(document.getElementById('map'), {
+	map = new google.maps.Map(document.getElementById("map"), {
 		center: {
 			lat: 59.9392265,
 			lng: 30.32917000
@@ -64,7 +66,7 @@ function initMap() {
 			lng: 30.32291472
 		},
 		map: map,
-		title: 'Наш маркер: Большой театр',
-		icon: 'img/pin.svg'
+		title: "Наш маркер: Мороженка",
+		icon: "img/pin.svg"
 	});
 }

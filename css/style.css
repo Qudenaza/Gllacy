@@ -1543,12 +1543,12 @@ body > input[type="radio"] {
 .sorting-select select {
   width: 193px;
   margin-top: 8px;
-  padding: 8px 8px 8px 12px;
+  padding: 8px 8px 8px 14px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  background: rgba(248, 247, 244, 0.2) url(../img/select-arrow.svg) no-repeat 158px 14px;
+  background: rgba(248, 247, 244, 0.2) url("../img/select-arrow.svg") no-repeat 164px 9px;
   border-radius: 25px;
   -webkit-appearance: none;
   /* for FF */
@@ -1579,7 +1579,7 @@ _:-ms-fullscreen, :root .sorting-select select {
 
 .sorting-select select:hover {
   color: #000000;
-  background: #ffffff url("../img/select-black.svg") no-repeat 158px 14px;
+  background: #ffffff url("../img/select-black.svg") no-repeat 164px 9px;
 }
 
 .sorting-select select:hover  option {
@@ -1609,7 +1609,7 @@ _:-ms-fullscreen, :root .sorting-select select {
 }
 
 .sorting-range b {
-  margin-left: 22px;
+  margin-left: 23px;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
@@ -1619,7 +1619,7 @@ _:-ms-fullscreen, :root .sorting-select select {
 .min-toogle, .max-toogle {
   position: absolute;
   top: 8px;
-  left: 32px;
+  left: 36px;
   width: 4px;
   height: 4px;
   border: 8px solid #ffffff;
@@ -1636,7 +1636,7 @@ _:-ms-fullscreen, :root .sorting-select select {
 }
 
 .max-toogle {
-  left: 132px;
+  left: 134px;
 }
 
 .range-line::after {
@@ -1702,28 +1702,31 @@ _:-ms-fullscreen, :root .sorting-select select {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background: url("../img/radio-off.svg") no-repeat;
+  background: url("../img/radio-off.svg") no-repeat 0 1px;
   vertical-align: middle;
 }
 
 .radio input:checked + .control-indicator {
   width: 25px;
   height: 25px;
-  background: url("../img/radio-on.svg") no-repeat;
+  background: url("../img/radio-on.svg") no-repeat 0 1px;
 }
 
 .fat-wrapper {
   height: 26px;
-  margin: -5px 0 0 6px;
-  padding: 7px 0 5px 0;
+  margin: -3px 0 0 9px;
+  padding: 5px 0 5px 0;
   background: rgba(248, 247, 244, 0.2);
   border-radius: 25px;
 }
 
 .radio .control-indicator:hover {
-  background: url("../img/radio-off-hover.svg") no-repeat;
+  background: url("../img/radio-off-hover.svg") no-repeat 0 1px;
 }
 
+.move-right {
+  margin-right: 4px;
+}
 
 
 
@@ -1770,7 +1773,7 @@ _:-ms-fullscreen, :root .sorting-select select {
 .fill-wrapper {
   height: 25px;
   margin: -9px 0 5px 0;
-  padding: 8px 0 5px 0;
+  padding: 8px 0 4px 0;
   background: rgba(248, 247, 244, 0.2);
   border-radius: 25px;
 }
@@ -1859,7 +1862,7 @@ _:-ms-fullscreen, :root .sorting-select select {
 }
 
 .pagination-list {
-  margin: 40px 22px 28px 0;
+  margin: 40px 24px 28px 0;
   list-style: none;
   text-align: right;
 }
