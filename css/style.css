@@ -9,7 +9,6 @@ html, body {
   background: #849d8f;
 }
 
-
 /* Глобальные стили */
 
 .site-wrapper {
@@ -55,19 +54,45 @@ html, body {
   overflow: hidden;
 }
 
-:focus::-webkit-input-placeholder {color: transparent}   /*Скрываем плэйсхолдер в фокусе */
-:focus::-moz-placeholder          {color: transparent}
-:focus:-moz-placeholder           {color: transparent}
-:focus:-ms-input-placeholder      {color: transparent}
+/*Скрываем плэйсхолдер в фокусе */
 
-input::-webkit-input-placeholder { color: #999999; font-size: 14px;}
-textarea::-webkit-input-placeholder { color: #999999; font-size: 14px;}
-input::-moz-placeholder { color: #999999; font-size: 14px;}
-textarea::-moz-placeholder { color: #999999; font-size: 14px;}
+:focus::-webkit-input-placeholder {
+  color: transparent;
+  }
 
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 14px;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 14px;
+}
+
+input::-moz-placeholder {
+  color: #999999;
+  font-size: 14px;
+}
+
+textarea::-moz-placeholder {
+  color: #999999;
+  font-size: 14px;
+}
 
 /* Базовые стили для всех кнопок */
-
 
 .button {
   display: inline-block;
@@ -103,9 +128,7 @@ textarea::-moz-placeholder { color: #999999; font-size: 14px;}
   outline: none;
 }
 
-
 /* Хедер*/
-
 
 .main-nav {
   display: -webkit-box;
@@ -117,9 +140,7 @@ textarea::-moz-placeholder { color: #999999; font-size: 14px;}
   margin: 10px 0 0 27px;
 }
 
-
 /* Меню сайта  */
-
 
 .site-menu {
   width: 500px;
@@ -133,14 +154,19 @@ textarea::-moz-placeholder { color: #999999; font-size: 14px;}
   position: relative;
   display: inline-block;
   padding-bottom: 4px;
+  vertical-align: top;
 }
 
 .site-menu a {
   display: block;
+  max-height: 46px;
+  max-width: 150px;
   margin-right: -3px;
   padding: 8px 14px 8px 14px;
   color: inherit;
   border-radius: 25px;
+  white-space: pre-wrap;
+  overflow: hidden;
 }
 
 .site-menu a:hover {
@@ -170,9 +196,7 @@ textarea::-moz-placeholder { color: #999999; font-size: 14px;}
   text-decoration: none;
 }
 
-
 /* Подменю */
-
 
 .sub-menu {
   position: absolute;
@@ -238,9 +262,7 @@ textarea::-moz-placeholder { color: #999999; font-size: 14px;}
   background-color: #d07058;
 }
 
-
 /* Блок пользователя */
-
 
 .user-block {
   display: -webkit-box;
@@ -331,9 +353,7 @@ textarea::-moz-placeholder { color: #999999; font-size: 14px;}
   background: #ffffff url("../img/basket-red.svg") no-repeat 17px 7px;
 }
 
-
  /* Форма поиска */
-
 
 .search-form {
   position: absolute;
@@ -381,9 +401,7 @@ textarea::-moz-placeholder { color: #999999; font-size: 14px;}
   color: #5b9ddf;
 }
 
-
 /* Форма входа */
-
 
 .login-form {
   position: absolute;
@@ -466,9 +484,7 @@ textarea::-moz-placeholder { color: #999999; font-size: 14px;}
     color: #323232;
 }
 
-
 /* Корзина с товарами */
-
 
 .modal-basket {
   position: absolute;
@@ -566,9 +582,7 @@ textarea::-moz-placeholder { color: #999999; font-size: 14px;}
   color: #999999;
 }
 
-
 /* Контактная информация в хедере */
-
 
 .contact-info {
   float: right;
@@ -586,9 +600,7 @@ textarea::-moz-placeholder { color: #999999; font-size: 14px;}
   line-height: 27px;
 }
 
-
 /* Промо карточки */
-
 
 .promo-wrapper {
   display: -webkit-box;
@@ -639,9 +651,7 @@ textarea::-moz-placeholder { color: #999999; font-size: 14px;}
   border-radius: 23px;
 }
 
-
 /* Слайдер */
-
 
 .slider {
   position: relative;
@@ -721,7 +731,6 @@ body > input[type="radio"] {
 
 /* Товары */
 
-
 .product-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -753,7 +762,7 @@ body > input[type="radio"] {
 
 .product-price {
   position: absolute;
-  bottom: 100px;
+  top: 172px;
   font-size: 45px;
   line-height: 45px;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
@@ -784,7 +793,7 @@ body > input[type="radio"] {
 
 .product-wrapper .product-card::after {
   position: absolute;
-  bottom: 155px;
+  top: 222px;
   left: 95px;
   display: block;
   width: 30px;
@@ -792,8 +801,6 @@ body > input[type="radio"] {
   content: '';
   background: url("../img/ruble.svg") no-repeat;
 }
-
-
 
 .btn-hover {
   position: absolute;
@@ -807,17 +814,15 @@ body > input[type="radio"] {
   text-align: center;
 }
 
-
 .catalog-item .btn-hover {
   bottom: -36px;
 }
+
 .product-card:hover .btn-hover {
   display: block;
 }
 
-
 /* Вафелька */
-
 
 .features {
   margin: 0 27px 41px 27px;
@@ -845,6 +850,7 @@ body > input[type="radio"] {
   font-weight: 400;
   line-height: 22px;
   color: #323232;
+  vertical-align: top;
 }
 
 .item-creating::before {
@@ -905,10 +911,7 @@ body > input[type="radio"] {
   background: url("../img/thermometer.svg") no-repeat;
 }
 
-
 /* Еще промо карточки */
-
-
 
 .subscribe-wrapper {
   display: -webkit-box;
@@ -953,7 +956,8 @@ body > input[type="radio"] {
 
 .promo-subscribe {
   position: relative;
-  width: 548px;;
+  width: 548px;
+  max-height: 210px;
   margin-right: 13px;
   background: #f8f7f4;
   border: 5px solid transparent;
@@ -1011,6 +1015,8 @@ body > input[type="radio"] {
 }
 
 .subscribe-form .button {
+  max-width: 129px;
+  max-height: 52px;
   margin-left: 10px;
   padding: 10px 18px 10px 18px;
   font-size: 18px;
@@ -1018,8 +1024,8 @@ body > input[type="radio"] {
   border: none;
   outline: none;
   cursor: pointer;
+  overflow: hidden;
 }
-
 
 /* Форма обратной связи */
 
@@ -1062,15 +1068,42 @@ body > input[type="radio"] {
   border: 1px solid #e5e5e3;
 }
 
-.modal-feedback input::-webkit-input-placeholder { color: #999999; font-size: 16px;}
-.modal-feedback textarea::-webkit-input-placeholder { color: #999999; font-size: 16px;}
-.modal-feedback input::-moz-placeholder { color: #999999; font-size: 16px;}
-.modal-feedback textarea::-moz-placeholder { color: #999999; font-size: 16px;}
+.modal-feedback input::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 16px;
+}
 
-.modal-feedback :focus::-webkit-input-placeholder {color: transparent}   /*Скрываем плэйсхолдер в фокусе */
-.modal-feedback :focus::-moz-placeholder          {color: transparent}
-.modal-feedback :focus:-moz-placeholder           {color: transparent}
-.modal-feedback :focus:-ms-input-placeholder      {color: transparent}
+.modal-feedback textarea::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 16px;
+}
+
+.modal-feedback input::-moz-placeholder {
+  color: #999999;
+  font-size: 16px;
+}
+
+.modal-feedback textarea::-moz-placeholder {
+  color: #999999;
+  font-size: 16px;
+}
+
+
+.modal-feedback :focus::-webkit-input-placeholder {   /*Скрываем плэйсхолдер в фокусе */
+  color: transparent;
+  }
+
+.modal-feedback :focus::-moz-placeholder {
+  color: transparent;
+}
+
+.modal-feedback :focus:-moz-placeholder {
+  color: transparent;
+}
+
+.modal-feedback :focus:-ms-input-placeholder {
+  color: transparent;
+}
 
 .modal-feedback input:hover {
   -webkit-box-shadow: 0 0 0 2px #c7c6c5;
@@ -1196,10 +1229,7 @@ body > input[type="radio"] {
           animation: shake 0.5s;
 }
 
-
-
 /* Анимация */
-
 
 @-webkit-keyframes bounce {
   0%   {-webkit-transform: translateY(-2000px);transform: translateY(-2000px); }
@@ -1207,7 +1237,6 @@ body > input[type="radio"] {
   90%  {-webkit-transform: translateY(-10px);transform: translateY(-10px);   }
   100% {-webkit-transform: translateY(0);transform: translateY(0);       }
 }
-
 
 @keyframes bounce {
   0%   {-webkit-transform: translateY(-2000px);transform: translateY(-2000px); }
@@ -1228,9 +1257,7 @@ body > input[type="radio"] {
   20%, 40%, 60%, 80%      {-webkit-transform: translateX(10px);transform: translateX(10px);   }
 }
 
-
 /* Черный фон при открытии модального окна обратной связи  */
-
 
 .modal-overlay{
   position: fixed;
@@ -1247,9 +1274,7 @@ body > input[type="radio"] {
   display: block;
 }
 
-
 /* Карта */
-
 
 .map-wrapper {
   position: relative;
@@ -1270,7 +1295,7 @@ body > input[type="radio"] {
   z-index: 20;
   float: right;
   width: 275px;
-  height: 300px;
+  padding-bottom: 30px;
   margin: 61px 29px 0 0;
   padding-left: 25px;
   color: #323232;
@@ -1292,8 +1317,10 @@ body > input[type="radio"] {
 
 .adress .map-adress {
   display: inline-block;
+  max-height: 70px;
   margin-bottom: 19px;
   vertical-align: top;
+  overflow: hidden;
 }
 
 .feedback-btn {
@@ -1305,9 +1332,7 @@ body > input[type="radio"] {
   border-radius: 22px;
 }
 
-
 /* Футер */
-
 
 .page-footer {
   display: -webkit-box;
@@ -1398,6 +1423,7 @@ body > input[type="radio"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 500px;
   margin-right: -37px;
 }
 
@@ -1470,12 +1496,7 @@ body > input[type="radio"] {
   border-bottom: 1px solid #ffbc9e;
 }
 
-
-
-
 /* Разметка страницы контента */
-
-
 
 .breadcrumbs {
   margin: 22px 0 0 28px;
@@ -1514,7 +1535,6 @@ body > input[type="radio"] {
   margin-bottom: 32px;
 }
 
-
 .sorting-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1543,7 +1563,7 @@ body > input[type="radio"] {
 .sorting-select select {
   width: 193px;
   margin-top: 8px;
-  padding: 8px 8px 8px 14px;
+  padding: 8px 40px 8px 14px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -1558,9 +1578,7 @@ body > input[type="radio"] {
      text-overflow: '';
   /* for IE */
   -ms-appearance: none;
-  appearance: none!important;
 }
-
 
 @-moz-document url-prefix()
 {
@@ -1594,8 +1612,6 @@ _:-ms-fullscreen, :root .sorting-select select {
   outline: none;
   border-radius: 25px;
 }
-
-
 
 .sorting-range {
   padding-top: 3px;
@@ -1670,9 +1686,6 @@ _:-ms-fullscreen, :root .sorting-select select {
   background: #f8f7f4;
 }
 
-
-
-
 .sorting-fat {
   width: 423px;
 }
@@ -1728,8 +1741,6 @@ _:-ms-fullscreen, :root .sorting-select select {
   margin-right: 4px;
 }
 
-
-
 .sorting-fill {
   min-width: 700px;
   margin: -11px 0 0 27px;
@@ -1778,11 +1789,8 @@ _:-ms-fullscreen, :root .sorting-select select {
   border-radius: 25px;
 }
 
-
-
 .sorting-btn {
-  height: 37px;
-  margin: 36px 0 0 17px;
+  margin: 36px 0 7px 17px;
   padding: 6px 26px 6px 29px;
   background: rgba(248, 247, 244, 0.2);
   outline: none;
@@ -1809,7 +1817,6 @@ _:-ms-fullscreen, :root .sorting-select select {
           box-shadow: inset 0px 2px 2px 0px rgba(0,0,0,0.75);
 }
 
-
 .filters {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1818,14 +1825,12 @@ _:-ms-fullscreen, :root .sorting-select select {
       flex-wrap: wrap;
 }
 
-
 .catalog-item {
   position: relative;
   width: 267px;
   margin: 0 0 22px 26px;
   text-align: center;
 }
-
 
 .catalog-item:hover::before{
   content: "";
@@ -1843,8 +1848,8 @@ _:-ms-fullscreen, :root .sorting-select select {
 
 .catalog-item::after {
   position: absolute;
-  bottom: 92px;
-  left: 79px;
+  top: 216px;
+  left: 82px;
   display: block;
   width: 30px;
   height: 35px;
@@ -1853,8 +1858,7 @@ _:-ms-fullscreen, :root .sorting-select select {
 }
 
 .catalog-item .product-price {
-  bottom: 37px;
-  left: -2px;
+  top: 166px;
 }
 
 .catalog-item:hover .btn-hover {
