@@ -14,7 +14,6 @@ html, body {
 .site-wrapper {
   min-width: 1200px;
   min-height: 100px;
-  background: #849d8f;
   -webkit-transition: background ease-in-out .5s;
 	-o-transition: background ease-in-out .5s;
 	transition: background ease-in-out .5s;
@@ -701,7 +700,7 @@ body > input[type="radio"] {
 }
 
 #btn-1:checked ~ .site-wrapper {
-  background: url('../img/slider-image-1.png') no-repeat top center;
+  background: #849d8f url("../img/slider-image-1.png") no-repeat top center;
 }
 
 #btn-2:checked ~ .site-wrapper {
@@ -1838,7 +1837,7 @@ _:-ms-fullscreen, :root .sorting-select select {
   top: -6px;
   left: -13px;
   width: 292px;
-  min-height: 407px;
+  min-height: 115%;
   z-index: 256;
   border-radius: 5px;
   background-color: rgba(248, 247, 244, 0.2);
@@ -1866,7 +1865,7 @@ _:-ms-fullscreen, :root .sorting-select select {
 }
 
 .pagination-list {
-  margin: 40px 24px 28px 0;
+  margin: 40px 15px 28px 0;
   list-style: none;
   text-align: right;
 }
@@ -1908,14 +1907,22 @@ _:-ms-fullscreen, :root .sorting-select select {
 .page-down {
   width: 18px;
   height: 18px;
-  background: url("../img/icon-right-small.svg") no-repeat 6px 0px;
+  background: url("../img/icon-right-small.svg") no-repeat 6px 6px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
+.pagination-list .page-down:hover{
+  background: url("../img/icon-right-small.svg") no-repeat 6px 6px;
+}
+
+.pagination-list .page-up:hover {
+  background: url("../img/icon-right-white.svg") no-repeat 6px 8px;
+}
+
 .page-up {
   width: 18px;
   height: 18px;
-  background: url("../img/icon-right-white.svg") no-repeat 6px 6px;
+  background: url("../img/icon-right-white.svg") no-repeat 6px 8px;
 }
